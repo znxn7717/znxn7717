@@ -310,6 +310,16 @@ Your browser does not support the audio element.
   <source src="http://soundbible.com/grab.php?id=2005&type=mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+<audio id="myAudio1">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio2">
+  <source src="https://s103.123apps.com/acutter/d/s103xN333nPx_wav_mepoxDOe.mp3" type="audio/ogg">
+  <source src="https://s103.123apps.com/acutter/d/s103xN333nPx_wav_mepoxDOe.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 <br>
 <br>
 <center>
@@ -394,7 +404,7 @@ Your browser does not support the audio element.
 <center>
   <div class="container">
     <div class="copyright" style="font-family:Sans-serif;color:#ddd;font-weight:100;">Page Created By
-      <a id="copyright" onmouseover="Itemon0(this)" onmouseout="Itemout0(this)" style="font-size:18px;font-weight:bold;color:#3AA1BF;cursor:pointer;text-decoration:none;" data-toggle="modal" data-target="#myModal">znxn7717</a>
+      <a id="copyright" onclick="typesound()" onmouseover="Itemon0(this)" onmouseout="Itemout0(this)" style="font-size:18px;font-weight:bold;color:#3AA1BF;cursor:pointer;text-decoration:none;" data-toggle="modal" data-target="#myModal">znxn7717</a>
     </div>
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
@@ -504,6 +514,16 @@ Your browser does not support the audio element.
   }
   function Itemout00(x) {
     x.style.letterSpacing= "0px";
+  }
+  var x = document.getElementById("myAudio1"); 
+  function typesound() {
+  x.volume = 0.6;
+  x.play(); 
+  }
+  var y = document.getElementById("myAudio2"); 
+  function typesound() {
+  y.volume = 1;
+  y.play();    
   }
   function Itemon0(x) {
     x.style.margin= "0 0 0 5px";
